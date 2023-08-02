@@ -23,9 +23,7 @@ public class HeapSort {
             heap(arr, n, i);
         }
         for (int i = n - 1; i >= 0; i--) {
-            int temp = arr[0]; // temp = 10
-            arr[0] = arr[i]; // arr[0] = 3
-            arr[i] = temp; // arr[i] = 10
+            swap(arr, 0, i);
             heap(arr, i, 0);
         }
     }
