@@ -33,9 +33,11 @@ public class Program {
         oldValue = hashMap1.remove("+79007774435");
         oldValue = hashMap1.remove("+79007774435");
 
-        for (HashMap.Entity element : hashMap1) {
-            System.out.println(element.key + " " + element.value);
-        }
+
+        System.out.println(hashMap1);
+//        for (HashMap.Entity element : hashMap1) {
+//            System.out.println(element.key + " " + element.value);
+//        }
 
 
 

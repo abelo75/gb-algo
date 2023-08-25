@@ -30,7 +30,11 @@ public class HashMap<K, V> implements Iterable<HashMap.Entity> {
      */
     @Override
     public String toString() {
-        return super.toString();
+        StringBuilder builder = new StringBuilder();
+        for (HashMap.Entity element : this) {
+            builder.append("[").append(element.key).append("] = ").append(element.value).append("\n");
+        }
+        return builder.toString();
     }
 
     private int calculateBucketIndex(K key) {
