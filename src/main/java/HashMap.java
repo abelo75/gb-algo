@@ -112,14 +112,14 @@ public class HashMap<K, V> implements Iterable<HashMap.Entity> {
          * @return
          */
 
-        int currentBucket;
-        Bucket.Node currentNode;
+        private int currentBucket;
+        private Bucket.Node currentNode;
 
         HashMapIterator() {
             currentBucket = -1;
         }
 
-        int getNextBucketIndex() {
+        private int getNextBucketIndex() {
             int currentBucket = this.currentBucket;
             do {
                 currentBucket++;
